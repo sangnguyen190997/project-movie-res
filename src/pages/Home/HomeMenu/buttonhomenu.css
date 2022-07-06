@@ -1,0 +1,58 @@
+.jss1538{
+    border: 1px solid #e4e4e4;
+    border-radius: 7px;
+    color: #108f3e;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 10px 10px 0;
+    padding: 5px 12px;
+    transition: all .2s;
+}
+
+.jss1538:hover {
+    color: red;
+}
+
+@media only screen and (min-width: 1024px) {
+    .jss1538 {
+        border: 1px solid #e4e4e4;
+        border-radius: 7px;
+        color: #108f3e;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        margin: 0px 0px;
+        /* line-height: 18px;
+        font-size: 12px; */
+        text-align: center;
+    }
+
+    .grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-cols-6 {
+        grid-template-columns: none;
+    }
+}
+
+
+@media only screen and (min-width: 640px) {
+    .grid-cols-6 {
+        grid-template-columns: none;
+    } 
+
+     .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab{
+        padding-left: 0 !important;
+    }
+
+    .ant-tabs-right > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-left > div > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-right > div > .ant-tabs-nav .ant-tabs-tab {
+        padding: 10px 10px;
+        text-align: center;
+    }
+}
+
+
