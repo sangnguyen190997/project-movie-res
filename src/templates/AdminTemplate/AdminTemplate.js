@@ -65,9 +65,10 @@ const AdminTemplate = (props) => {
                   style={{
                     width: 40,
                     height: 40,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    // display: "flex",
+                    lineHeight: "32px",
+                    // justifyContent: "center",
+                    // alignItems: "center",
                   }}
                   className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
                 >

@@ -63,9 +63,10 @@ export default function Header() {
                 style={{
                   width: 40,
                   height: 40,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  // display: "flex",
+                  lineHeight: "32px",
+                  // justifyContent: "center",
+                  // alignItems: "center",
                 }}
                 className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
               >
@@ -86,8 +87,8 @@ export default function Header() {
           </button>
           <button
             onClick={() => {
-              localStorage.removeItem("userLogin");
-              localStorage.removeItem("accessToken");
+              localStorage.removeItem(USER_LOGIN);
+              localStorage.removeItem(TOKEN);
               history.push("/home");
               window.location.reload();
             }}
@@ -111,10 +112,10 @@ export default function Header() {
               style={{
                 width: 40,
                 height: 40,
-                display: "flex",
-                justifyContent: "center",
-                fontSize: "30px",
-                lineHeight: "30px",
+                // display: "flex",
+                lineHeight: "32px",
+                // justifyContent: "center",
+                // alignItems: "center",
               }}
               className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
             >
@@ -184,13 +185,14 @@ export default function Header() {
                 style={{
                   width: 40,
                   height: 40,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  // display: "flex",
+                  lineHeight: "32px",
+                  // justifyContent: "center",
+                  // alignItems: "center",
                 }}
                 className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
               >
-                {userLogin.taiKhoan.substr(0, 1)}
+                {/* {userLogin.taiKhoan.substr(0, 1)} */}
               </span>
               <span className="justify-center align-middle text-black font-medium">
                 {userLogin.taiKhoan}
@@ -221,8 +223,8 @@ export default function Header() {
           </a>
           <a
             onClick={() => {
-              localStorage.removeItem("userLogin");
-              localStorage.removeItem("accessToken");
+              localStorage.removeItem(USER_LOGIN);
+              localStorage.removeItem(TOKEN);
               history.push("/home");
               window.location.reload();
             }}
