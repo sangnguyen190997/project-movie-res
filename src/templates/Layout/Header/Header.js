@@ -1,15 +1,14 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { history } from "../../../App";
 import { Select, Button, Modal } from "antd";
-import { UserOutlined, DownOutlined, RightOutlined } from "@ant-design/icons";
+import { RightOutlined } from "@ant-design/icons";
 
 //Hook đa ngôn ngữ
 // import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import _ from "lodash";
 import { TOKEN, USER_LOGIN } from "../../../util/settings/config";
-const { Option } = Select;
 
 export default function Header() {
   // const { t, i18n } = useTranslation();
@@ -141,11 +140,11 @@ export default function Header() {
     );
   };
 
-  const App = () => {
+  const RenderModal = () => {
     const [modalVisible, setModalVisible] = useState(false);
 
     return (
-      <>
+      <div className="p-4 lg:hidden">
         <Button
           style={{ background: "transparent", color: "white", border: "none" }}
           onClick={() => setModalVisible(true)}
@@ -175,31 +174,29 @@ export default function Header() {
           width={150}
           closeIcon={<RightOutlined />}
         >
-          <section>
-            <button
-              onClick={() => {
-                history.push("/profile");
-              }}
-            >
-              <div className="flex justify-start items-center">
-                <span
-                  style={{
-                    width: 40,
-                    height: 40,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                  className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
-                >
-                  {userLogin.taiKhoan.substr(0, 1)}
-                </span>
-                <span className="justify-center align-middle text-black font-medium">
-                  {userLogin.taiKhoan}
-                </span>
-              </div>
-            </button>
-          </section>
+          <button
+            onClick={() => {
+              history.push("/profile");
+            }}
+          >
+            <div className="flex justify-start items-center">
+              <span
+                style={{
+                  width: 40,
+                  height: 40,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                className="text-xl ml-2 m-2 rounded-full bg-indigo-200"
+              >
+                {userLogin.taiKhoan.substr(0, 1)}
+              </span>
+              <span className="justify-center align-middle text-black font-medium">
+                {userLogin.taiKhoan}
+              </span>
+            </div>
+          </button>
 
           <a
             href="#lichChieu"
@@ -234,7 +231,7 @@ export default function Header() {
             Đăng xuất
           </a>
         </Modal>
-      </>
+      </div>
     );
   };
   return (
@@ -307,23 +304,7 @@ export default function Header() {
               <Option value="vi">Vi</Option>
             </Select> */}
           </div>
-          <button className="p-4 lg:hidden" type="button">
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6 dark:text-coolGray-100"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg> */}
-            <App />
-          </button>
+          <Fragment>{RenderModal()}</Fragment>
         </div>
       </header>
     </div>

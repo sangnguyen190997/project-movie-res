@@ -1,23 +1,9 @@
 import React, { useState } from "react";
-import {
-  Form,
-  Input,
-  Button,
-  Radio,
-  Select,
-  Cascader,
-  DatePicker,
-  InputNumber,
-  TreeSelect,
-  Switch,
-} from "antd";
+import { Form, Input, Radio, DatePicker, InputNumber, Switch } from "antd";
 import { useFormik } from "formik";
 import moment from "moment";
 import { useDispatch } from "react-redux";
-import {
-  themPhimUpLoadHinhAction,
-  themPhimUploadHinhAction,
-} from "../../../../redux/actions/QuanLyPhimActions";
+import { themPhimUpLoadHinhAction } from "../../../../redux/actions/QuanLyPhimActions";
 import { GROUPID } from "../../../../util/settings/config";
 
 const AddNew = () => {

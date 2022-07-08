@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import styleSlick from "./MultipleRowSlick.module.css";
 import Film from "../Film/Film";

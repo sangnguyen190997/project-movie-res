@@ -206,7 +206,7 @@ const Edit = (props) => {
             src={imgSrc === "" ? thongTinPhim.hinhAnh : imgSrc}
           />
         </Form.Item>
-        <Form.Item label="Button">
+        <Form.Item label="ButtonUpdate">
           <button type="submit" className="bg-blue-300 text-white p-2">
             Cập nhật
           </button>

@@ -12,7 +12,7 @@ export default function News() {
           <div className="jss113">
             <a
               href="https://tix.vn/goc-dien-anh/7965-an-dinh-chac-nich-ngay-khoi-chieu-16-04-ly-hai-tung-clip-lat-mat-48h-dam-chat"
-              class="jss111"
+              className="jss111"
             >
               <img
                 className="jss107"

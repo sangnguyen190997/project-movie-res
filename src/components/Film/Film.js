@@ -28,11 +28,7 @@ export default function Film(props) {
     const [visible, setVisible] = useState(false);
     return (
       <>
-        <Button
-          className="playMovie"
-          type="submit"
-          onClick={() => setVisible(true)}
-        >
+        <Button className="playMovie" onClick={() => setVisible(true)}>
           <PlayCircleOutlined />
         </Button>
         <Modal
@@ -67,7 +63,7 @@ export default function Film(props) {
         >
           <img
             src={phim.hinhAnh}
-            alt
+            alt={phim.hinhAnh}
             className="object-cover object-center w-full rounded-md h-80 dark:bg-coolGray-500 opacity-0"
           />
         </div>

@@ -96,7 +96,7 @@ export default function Profile() {
     >
       <Tabs onChange={callback} type="card">
         <TabPane tab="Thông Tin Cá Nhân" key="1">
-          <Form onSubmitCapture={formik.handleSubmit}>
+          <div onSubmitCapture={formik.handleSubmit}>
             <div className="flex">
               <div>
                 <button>
@@ -183,7 +183,7 @@ export default function Profile() {
                 </button>
               </Form>
             </div>
-          </Form>
+          </div>
         </TabPane>
         <TabPane tab="Lịch Sử Đặt Vé" key="2">
           <div className="container px-5 py-5 mx-auto">
