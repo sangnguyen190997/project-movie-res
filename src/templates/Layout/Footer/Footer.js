@@ -25,12 +25,12 @@ export default function Footer() {
               />
             </a>
           </div>
-          <div className="col-span-6 text-center md:text-left md:col-span-4">
+          <div className="col-span-6 text-center md:col-span-4">
             <p className="pb-1 text-lg font-medium text-white">PARTNER</p>
-            <div className="grid grid-cols-3" style={{ color: "#fff" }}>
+            <div className="grid grid-cols-3 gap-3" style={{ color: "#fff" }}>
               {arrHeThongRap.map((htr, index) => {
                 return (
-                  <div className="my-2" key={index}>
+                  <div className="my-2 m-auto" key={index}>
                     <img src={htr.logo} style={{ width: 50 }} />
                   </div>
                 );
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-span-6 text-center md:text-left md:col-span-4 text-white">
-            <p className="pb-1 text-lg font-medium">Mobile app</p>
+            <p className="pb-1 text-lg font-medium text-center">Mobile app</p>
             <div className="flex text-white sm:justify-center">
               <div className="mr-5">
                 <AppleOutlined className="text-2xl" />
