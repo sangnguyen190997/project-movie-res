@@ -61,7 +61,7 @@ export default function HomeMenu(props) {
                             {phim.tenPhim}
                           </h2>
                           <p className="mb-2">{cumRap.diaChi}</p>
-                          <div className="grid grid-cols-6 gap-6 text-sm">
+                          <div className="grid xl:grid-cols-6 xl:gap-6 text-sm lg:grid-cols-3 lg:gap-3 md:grid-cols-2 md:gap-2 sm:grid-cols-1">
                             {phim.lstLichChieuTheoPhim
                               ?.slice(0, 6)
                               .map((lichChieu, index) => {

@@ -28,22 +28,22 @@
         text-align: center;
     }
 
-    .grid-cols-6 {
+    /* .grid-cols-6 {
         grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-    }
+    } */
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .grid-cols-6 {
         grid-template-columns: none;
     }
-}
+} */
 
 
 @media only screen and (min-width: 640px) {
-    .grid-cols-6 {
+    /* .grid-cols-6 {
         grid-template-columns: none;
-    } 
+    }  */
 
      .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab{
         padding-left: 0 !important;
